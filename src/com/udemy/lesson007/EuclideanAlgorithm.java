@@ -7,6 +7,10 @@ public class EuclideanAlgorithm {
 		return calculateRecursive(n2, n1 % n2);
 	}
 	
+	public static int calculateIterative(int n1, int n2) {
+		return 0;
+	}
+	
 	public static void main(String[] args) {
 		System.out.println(calculateRecursive(1,5));
 		System.out.println(calculateRecursive(6,9));
