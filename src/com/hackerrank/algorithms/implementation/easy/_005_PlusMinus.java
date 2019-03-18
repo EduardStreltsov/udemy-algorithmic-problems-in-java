@@ -2,7 +2,7 @@ package com.hackerrank.algorithms.implementation.easy;
 
 import java.util.Arrays;
 
-public class _004_PlusMinus {
+public class _005_PlusMinus {
 	
 	private static void plusMinus(int[] arr) {
 		System.out.println((float) Arrays.stream(arr).filter(i -> i > 0).count() / arr.length);
