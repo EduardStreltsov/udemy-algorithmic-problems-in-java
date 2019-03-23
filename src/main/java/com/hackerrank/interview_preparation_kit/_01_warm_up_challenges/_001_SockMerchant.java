@@ -3,7 +3,7 @@ package com.hackerrank.interview_preparation_kit._01_warm_up_challenges;
 import java.util.HashMap;
 import java.util.Map;
 
-public class _01_SockMerchant {
+public class _001_SockMerchant {
 	
 	// Complete the sockMerchant function below.
 	private static int sockMerchant(int n, int[] ar) {

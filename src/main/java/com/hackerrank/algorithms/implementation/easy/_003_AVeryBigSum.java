@@ -1,6 +1,7 @@
 package com.hackerrank.algorithms.implementation.easy;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class _003_AVeryBigSum {
@@ -26,8 +27,8 @@ public class _003_AVeryBigSum {
 	
 	}
 	
-	private static void sumWithJava8(long[] arr) {
-	
+	private static long sumWithJava8(long[] arr) {
+		return Arrays.stream(arr).sum();
 	}
 	
 	
