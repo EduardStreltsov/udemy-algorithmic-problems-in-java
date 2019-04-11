@@ -1,4 +1,4 @@
-package com.hackerrank.algorithms.implementation.easy;
+package com.hackerrank.algorithms.easy;
 
 import java.util.Arrays;
 

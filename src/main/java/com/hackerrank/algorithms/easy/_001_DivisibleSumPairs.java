@@ -1,4 +1,4 @@
-package com.hackerrank.algorithms.implementation.easy;
+package com.hackerrank.algorithms.easy;
 
 public class _001_DivisibleSumPairs {
 	
