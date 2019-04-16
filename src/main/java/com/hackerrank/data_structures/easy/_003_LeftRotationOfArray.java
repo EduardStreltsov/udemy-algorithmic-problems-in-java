@@ -25,15 +25,20 @@ public class _003_LeftRotationOfArray {
 		}
 		
 		int[] buffer = new int[n];
+		int bufferStopIndex = n - 1;
 		
 		for (int i = arr.length - 1; i >= 0; i -= n) {
 			for (int j = 0; j < n; j++) {
+				if (i - j < 0) {
+					bufferStopIndex = j;
+					break;
+				}
 				int tmp = buffer[j];
 				buffer[j] = arr[i - j];
 				arr[i - j] = tmp;
 			}
 		}
-		for (int j = 0; j < n; j++) {
+		for (int j = 0; j < bufferStopIndex; j++) {
 			arr[arr.length - 1 - j] = buffer[j];
 		}
 		
@@ -41,6 +46,10 @@ public class _003_LeftRotationOfArray {
 	}
 	
 	public static void main(String[] args) {
+//		System.out.println(Arrays.toString(leftShift(new int[]{1, 2, 3, 4, 5, 6, 7, 8}, 1)));
+//		System.out.println(Arrays.toString(leftShift(new int[]{1, 2, 3, 4, 5, 6, 7, 8}, 2)));
 		System.out.println(Arrays.toString(leftShift(new int[]{1, 2, 3, 4, 5, 6, 7, 8}, 3)));
+//		System.out.println(Arrays.toString(leftShift(new int[]{1, 2, 3, 4, 5, 6, 7, 8}, 4)));
+//		System.out.println(Arrays.toString(leftShift(new int[]{1, 2, 3, 4, 5, 6, 7, 8}, 5)));
 	}
 }
